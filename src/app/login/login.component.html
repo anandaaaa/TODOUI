@@ -1,0 +1,7 @@
+<h1>Login Page</h1>
+<div class="container">
+<div *ngIf="message">invalid credentials</div> <br>
+Name:<input type="text" [(ngModel)]="username">
+password:<input type="text" [(ngModel)]="password">
+<button (click)="checkAuthenticate()" class="btn btn-success">submit</button>
+</div>
